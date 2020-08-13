@@ -1,0 +1,28 @@
+<h3>{{viewTitle}}</h3>
+<a class="btn btn-primary" href="/employee" role="button"><i class="fa fa-plus"> Add Employee</i></a>
+
+<table class="table table-striped" style="margin: 20px;">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>City</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.fullName}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.mobile}}</td>
+            <td>{{this.city}}</td>
+            <td>
+                <a href="/employee/{{this.id}}"><i class="fa fa-pencil fa-lg" style="color: green;" aria-hidden="true"></i></a>
+                <a href="/employee/delete/{{this.id}}"><i class="fa fa-trash fa-lg" style="color: red;" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

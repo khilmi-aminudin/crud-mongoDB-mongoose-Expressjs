@@ -1,0 +1,20 @@
+{
+  "name": "crud-mongodb",
+  "version": "1.0.0",
+  "description": "Learn CRUD mongodb with mongoose",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "author": "khilmi aminudin",
+  "license": "ISC",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "handlebars": "^4.7.6",
+    "mongoose": "^5.9.28",
+    "nodemon": "^2.0.4"
+  }
+}
